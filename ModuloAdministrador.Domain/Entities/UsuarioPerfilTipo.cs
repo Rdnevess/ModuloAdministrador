@@ -5,6 +5,6 @@ namespace ModuloAdministrador.Domain.Entities {
         public int Id { get; set; }
         public string Descricao { get; set; }
 
-        public ICollection<UsuarioEntidadePerfil> UsuarioEntidadePerfis { get; set; }
+        public virtual ICollection<UsuarioEntidadePerfil> UsuarioEntidadePerfis { get; set; }
     }
 }

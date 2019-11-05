@@ -11,7 +11,7 @@ namespace ModuloAdministrador.Domain.Entities {
 
         public virtual Estado Estado { get; set; }
 
-        public ICollection<Entidade> Entidades { get; set; }
-        //public ICollection<ColaboradorEndereco> ColaboradorEnderecos { get; set; }
+        public virtual ICollection<Entidade> Entidades { get; set; }
+
     }
 }

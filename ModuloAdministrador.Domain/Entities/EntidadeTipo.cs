@@ -5,6 +5,6 @@ namespace ModuloAdministrador.Domain.Entities {
         public int Id { get; set; }
         public string Descricao { get; set; }
 
-        public ICollection<Entidade> Entidades { get; set; }
+        public virtual ICollection<Entidade> Entidades { get; set; }
     }
 }

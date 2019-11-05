@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "ModuloAdministradorDB": "Server=localhost; userid=root; password=admin; Database=ModuloAdministradorDB"
+    "ModuloAdministradorDB": "Server=localhost; userid=root; password=admin; database=ModuloAdministradorDB;"
   }
 }

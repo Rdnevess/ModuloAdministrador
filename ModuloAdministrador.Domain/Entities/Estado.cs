@@ -7,8 +7,8 @@ namespace ModuloAdministrador.Domain.Entities {
         public string Nome { get; set; }
         public bool Ativo { get; set; }
 
-        public ICollection<Municipio> Municipios { get; set; }
-        public ICollection<Entidade> Entidades { get; set; }
+        public virtual ICollection<Municipio> Municipios { get; set; }
+        public virtual ICollection<Entidade> Entidades { get; set; }
 
         //public ICollection<EntidadeFiscalizada> EntidadesFiscalizadas { get; set; }
         //public ICollection<EntidadeFiscalizadora> EntidadesFiscalizadoras { get; set; }
