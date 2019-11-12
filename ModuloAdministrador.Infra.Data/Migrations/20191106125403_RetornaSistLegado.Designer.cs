@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ModuloAdministrador.Infra.Data.Context;
 
 namespace ModuloAdministrador.Infra.Data.Migrations
 {
     [DbContext(typeof(ModuloAdministradorContext))]
-    partial class ModuloAdministradorContextModelSnapshot : ModelSnapshot
+    [Migration("20191106125403_RetornaSistLegado")]
+    partial class RetornaSistLegado
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,7 +48,7 @@ namespace ModuloAdministrador.Infra.Data.Migrations
 
                     b.HasIndex("MunicipioId");
 
-                    b.ToTable("Entidades");
+                    b.ToTable("Entidade");
                 });
 
             modelBuilder.Entity("ModuloAdministrador.Domain.Entities.EntidadeTipo", b =>
@@ -58,7 +60,7 @@ namespace ModuloAdministrador.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("EntidadeTipos");
+                    b.ToTable("EntidadeTipo");
                 });
 
             modelBuilder.Entity("ModuloAdministrador.Domain.Entities.Estado", b =>
@@ -144,7 +146,7 @@ namespace ModuloAdministrador.Infra.Data.Migrations
 
                     b.HasIndex("UsuarioPerfilTipoId");
 
-                    b.ToTable("UsuarioEntidadePerfis");
+                    b.ToTable("UsuarioEntidadePerfil");
                 });
 
             modelBuilder.Entity("ModuloAdministrador.Domain.Entities.UsuarioPerfilTipo", b =>
@@ -156,7 +158,7 @@ namespace ModuloAdministrador.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsuarioPerfilTipos");
+                    b.ToTable("UsuarioPerfilTipo");
                 });
 
             modelBuilder.Entity("ModuloAdministrador.Domain.Entities.Entidade", b =>

@@ -7,6 +7,7 @@ namespace ModuloAdministrador.Infra.Data.Config {
         public void Configure(EntityTypeBuilder<Entidade> builder) {
             builder.HasKey(e => e.Id);
 
+            builder.Property(e => e.IdSistemaLegado);
 
             builder.Property(e => e.EstadoId).IsRequired();
 

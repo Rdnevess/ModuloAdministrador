@@ -7,10 +7,10 @@ namespace ModuloAdministrador.Infra.Data.Context {
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Estado> Estados { get; set; }
         public DbSet<Municipio> Municipios { get; set; }
-
-        //public DbSet<UsuarioEntidadePerfil> Usuarios { get; set; }
-        //public DbSet<UsuarioPerfilTipo> Usuarios { get; set; }
-        //public DbSet<EntidadeTipo> Usuarios { get; set; }
+        public DbSet<Entidade> Entidades { get; set; }
+        public DbSet<UsuarioEntidadePerfil> UsuarioEntidadePerfis { get; set; }
+        public DbSet<UsuarioPerfilTipo> UsuarioPerfilTipos { get; set; }
+        public DbSet<EntidadeTipo> EntidadeTipos { get; set; }
 
 
         public ModuloAdministradorContext(DbContextOptions options): base(options) {

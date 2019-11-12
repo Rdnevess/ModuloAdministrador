@@ -4,6 +4,7 @@ namespace ModuloAdministrador.Domain.Entities {
     public class Entidade {
         public int Id { get; set; }
         public int EstadoId { get; set; }
+        public int IdSistemaLegado { get; set; }
         public int? MunicipioId { get; set; }
         public string Nome { get; set; }
         public string Cnpj { get; set; }
