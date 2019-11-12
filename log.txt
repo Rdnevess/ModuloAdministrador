@@ -1,0 +1,229 @@
+'ModuloAdministradorContext' generated a temporary value for the 'Id' property of new 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.'ModuloAdministradorContext' generated a temporary value for the 'Id' property of new 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Beginning transaction with isolation level 'Unspecified'.Executing update commands individually as the number of batchable commands (2) is smaller than the minimum batch size (4).Executing DbCommand [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Executed DbCommand (76ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Foreign key property 'Usuario.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.A data reader was disposed.Executing DbCommand [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Foreign key property 'Usuario.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.A data reader was disposed.Committing transaction.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.Disposing transaction.An 'Usuario' entity tracked by 'ModuloAdministradorContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.An 'Usuario' entity tracked by 'ModuloAdministradorContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.SaveChanges completed for 'ModuloAdministradorContext' with 2 entities written to the database.'ModuloAdministradorContext' disposed.Compiling query model: 
+'from Usuario <generated>_0 in DbSet<Usuario>
+select [<generated>_0]'Optimized query model: 
+'from Usuario <generated>_0 in DbSet<Usuario>
+select [<generated>_0]'(QueryContext queryContext) => IEnumerable<Usuario> _InterceptExceptions(
+    source: IEnumerable<Usuario> _TrackEntities(
+        results: IEnumerable<Usuario> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+                FROM `Usuarios` AS `u`, 
+            shaper: UnbufferedEntityShaper<Usuario>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Usuario }, 
+        entityAccessors: List<Func<Usuario, object>> 
+        { 
+            Func<Usuario, Usuario>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.SaveChanges completed for 'ModuloAdministradorContext' with 0 entities written to the database.'ModuloAdministradorContext' disposed.Compiling query model: 
+'from Usuario <generated>_0 in DbSet<Usuario>
+select [<generated>_0]'Optimized query model: 
+'from Usuario <generated>_0 in DbSet<Usuario>
+select [<generated>_0]'(QueryContext queryContext) => IEnumerable<Usuario> _InterceptExceptions(
+    source: IEnumerable<Usuario> _TrackEntities(
+        results: IEnumerable<Usuario> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+                FROM `Usuarios` AS `u`, 
+            shaper: UnbufferedEntityShaper<Usuario>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Usuario }, 
+        entityAccessors: List<Func<Usuario, object>> 
+        { 
+            Func<Usuario, Usuario>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.SaveChanges completed for 'ModuloAdministradorContext' with 0 entities written to the database.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Navigation property 'UsuarioEntidadePerfis' of entity type 'UsuarioProxy' is being lazy-loaded.Compiling query model: 
+'from UsuarioEntidadePerfil e in DbSet<UsuarioEntidadePerfil>
+where Property([e], "UsuarioId") == __get_Item_0
+select [e]'Optimized query model: 
+'from UsuarioEntidadePerfil e in DbSet<UsuarioEntidadePerfil>
+where Property([e], "UsuarioId") == __get_Item_0
+select [e]'(QueryContext queryContext) => IEnumerable<UsuarioEntidadePerfil> _InterceptExceptions(
+    source: IEnumerable<UsuarioEntidadePerfil> _TrackEntities(
+        results: IEnumerable<UsuarioEntidadePerfil> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+                FROM `UsuarioEntidadePerfis` AS `e`
+                WHERE `e`.`UsuarioId` = @__get_Item_0, 
+            shaper: BufferedEntityShaper<UsuarioEntidadePerfil>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: UsuarioEntidadePerfil }, 
+        entityAccessors: List<Func<UsuarioEntidadePerfil, object>> 
+        { 
+            Func<UsuarioEntidadePerfil, UsuarioEntidadePerfil>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0Executed DbCommand (52ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Navigation property 'UsuarioEntidadePerfis' of entity type 'UsuarioProxy' is being lazy-loaded.Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.'ModuloAdministradorContext' disposed.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.SaveChanges completed for 'ModuloAdministradorContext' with 0 entities written to the database.'ModuloAdministradorContext' disposed.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.SaveChanges completed for 'ModuloAdministradorContext' with 0 entities written to the database.'ModuloAdministradorContext' disposed.Compiling query model: 
+'from Usuario u in DbSet<Usuario>
+where [u].Id < 3
+select [u]'Optimized query model: 
+'from Usuario u in DbSet<Usuario>
+where [u].Id < 3
+select [u]'(QueryContext queryContext) => IEnumerable<Usuario> _InterceptExceptions(
+    source: IEnumerable<Usuario> _TrackEntities(
+        results: IEnumerable<Usuario> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+                FROM `Usuarios` AS `u`
+                WHERE `u`.`Id` < 3, 
+            shaper: UnbufferedEntityShaper<Usuario>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Usuario }, 
+        entityAccessors: List<Func<Usuario, object>> 
+        { 
+            Func<Usuario, Usuario>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.'ModuloAdministradorContext' disposed.Compiling query model: 
+'from Usuario u in DbSet<Usuario>
+where [u].Id < 3
+select [u]'Optimized query model: 
+'from Usuario u in DbSet<Usuario>
+where [u].Id < 3
+select [u]'(QueryContext queryContext) => IEnumerable<Usuario> _InterceptExceptions(
+    source: IEnumerable<Usuario> _TrackEntities(
+        results: IEnumerable<Usuario> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+                FROM `Usuarios` AS `u`
+                WHERE `u`.`Id` < 3, 
+            shaper: UnbufferedEntityShaper<Usuario>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Usuario }, 
+        entityAccessors: List<Func<Usuario, object>> 
+        { 
+            Func<Usuario, Usuario>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`Cpf`, `u`.`Email`, `u`.`Nome`
+FROM `Usuarios` AS `u`
+WHERE `u`.`Id` < 3A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Navigation property 'UsuarioEntidadePerfis' of entity type 'UsuarioProxy' is being lazy-loaded.Compiling query model: 
+'from UsuarioEntidadePerfil e in DbSet<UsuarioEntidadePerfil>
+where Property([e], "UsuarioId") == __get_Item_0
+select [e]'Optimized query model: 
+'from UsuarioEntidadePerfil e in DbSet<UsuarioEntidadePerfil>
+where Property([e], "UsuarioId") == __get_Item_0
+select [e]'(QueryContext queryContext) => IEnumerable<UsuarioEntidadePerfil> _InterceptExceptions(
+    source: IEnumerable<UsuarioEntidadePerfil> _TrackEntities(
+        results: IEnumerable<UsuarioEntidadePerfil> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+                FROM `UsuarioEntidadePerfis` AS `e`
+                WHERE `e`.`UsuarioId` = @__get_Item_0, 
+            shaper: BufferedEntityShaper<UsuarioEntidadePerfil>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: UsuarioEntidadePerfil }, 
+        entityAccessors: List<Func<UsuarioEntidadePerfil, object>> 
+        { 
+            Func<UsuarioEntidadePerfil, UsuarioEntidadePerfil>, 
+        }
+    ), 
+    contextType: ModuloAdministrador.Infra.Data.Context.ModuloAdministradorContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0Executed DbCommand (21ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Navigation property 'UsuarioEntidadePerfis' of entity type 'UsuarioProxy' is being lazy-loaded.Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Ativo`, `e`.`DataCadastro`, `e`.`EntidadeId`, `e`.`UsuarioId`, `e`.`UsuarioPerfilTipoId`
+FROM `UsuarioEntidadePerfis` AS `e`
+WHERE `e`.`UsuarioId` = @__get_Item_0A data reader was disposed.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.'ModuloAdministradorContext' generated a temporary value for the 'Id' property of new 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.'ModuloAdministradorContext' generated a temporary value for the 'Id' property of new 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.Context 'Usuario' started tracking 'ModuloAdministradorContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.SaveChanges starting for 'ModuloAdministradorContext'.DetectChanges starting for 'ModuloAdministradorContext'.DetectChanges completed for 'ModuloAdministradorContext'.Opening connection to database 'ModuloAdministradorDB' on server 'localhost'.Opened connection to database 'ModuloAdministradorDB' on server 'localhost'.Beginning transaction with isolation level 'Unspecified'.Executing update commands individually as the number of batchable commands (2) is smaller than the minimum batch size (4).Executing DbCommand [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Foreign key property 'Usuario.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.A data reader was disposed.Executing DbCommand [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 200), @p2='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Usuarios` (`Cpf`, `Email`, `Nome`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Usuarios`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();Foreign key property 'Usuario.Id' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.A data reader was disposed.Committing transaction.Closing connection to database 'ModuloAdministradorDB' on server 'localhost'.Closed connection to database 'ModuloAdministradorDB' on server 'localhost'.Disposing transaction.An 'Usuario' entity tracked by 'ModuloAdministradorContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.An 'Usuario' entity tracked by 'ModuloAdministradorContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.SaveChanges completed for 'ModuloAdministradorContext' with 2 entities written to the database.'ModuloAdministradorContext' disposed.

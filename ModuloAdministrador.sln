@@ -13,17 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{FE375680
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{071C0ABF-17D2-4142-868F-178367947B0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministrador.Domain", "ModuloAdministrador.Domain\ModuloAdministrador.Domain.csproj", "{1437476E-6BE5-43C4-9ABA-4232733500A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuloAdministrador.Domain", "ModuloAdministrador.Domain\ModuloAdministrador.Domain.csproj", "{1437476E-6BE5-43C4-9ABA-4232733500A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{962818DA-BDCB-4568-92EB-131491C25B80}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A5796D0C-A5D8-4EC0-A6D1-2F83ABAB453B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministrador.Infra.Data", "ModuloAdministrador.Infra.Data\ModuloAdministrador.Infra.Data.csproj", "{96850C0C-9992-4917-B6E5-345B94CBEE48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuloAdministrador.Infra.Data", "ModuloAdministrador.Infra.Data\ModuloAdministrador.Infra.Data.csproj", "{96850C0C-9992-4917-B6E5-345B94CBEE48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministrador.Application", "ModuloAdministrador.Application\ModuloAdministrador.Application.csproj", "{2E12CD1E-71FB-4AF8-B70F-5A3BB481FEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuloAdministrador.Application", "ModuloAdministrador.Application\ModuloAdministrador.Application.csproj", "{2E12CD1E-71FB-4AF8-B70F-5A3BB481FEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministrador.API", "ModuloAdministrador.API\ModuloAdministrador.API.csproj", "{53F26941-F46E-4C01-906D-B99516637937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuloAdministrador.API", "ModuloAdministrador.API\ModuloAdministrador.API.csproj", "{53F26941-F46E-4C01-906D-B99516637937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministradorApp", "ModuloAdministradorApp\ModuloAdministradorApp.csproj", "{7A563D70-1571-4027-A47E-22B9FCF27981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloAdministrador.Infra.CrossCutting.Logging", "ModuloAdministrador.Infra.CrossCutting.Logging\ModuloAdministrador.Infra.CrossCutting.Logging.csproj", "{957D0599-412B-4E56-83AB-FE40C7FB54BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{53F26941-F46E-4C01-906D-B99516637937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F26941-F46E-4C01-906D-B99516637937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F26941-F46E-4C01-906D-B99516637937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A563D70-1571-4027-A47E-22B9FCF27981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A563D70-1571-4027-A47E-22B9FCF27981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A563D70-1571-4027-A47E-22B9FCF27981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A563D70-1571-4027-A47E-22B9FCF27981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957D0599-412B-4E56-83AB-FE40C7FB54BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957D0599-412B-4E56-83AB-FE40C7FB54BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957D0599-412B-4E56-83AB-FE40C7FB54BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957D0599-412B-4E56-83AB-FE40C7FB54BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +70,8 @@ Global
 		{96850C0C-9992-4917-B6E5-345B94CBEE48} = {A5796D0C-A5D8-4EC0-A6D1-2F83ABAB453B}
 		{2E12CD1E-71FB-4AF8-B70F-5A3BB481FEF9} = {A89B568C-639F-4D4D-8331-46B0DFAAE351}
 		{53F26941-F46E-4C01-906D-B99516637937} = {F05460DD-63C9-487D-899D-7CD34F842ED6}
+		{7A563D70-1571-4027-A47E-22B9FCF27981} = {071C0ABF-17D2-4142-868F-178367947B0E}
+		{957D0599-412B-4E56-83AB-FE40C7FB54BF} = {962818DA-BDCB-4568-92EB-131491C25B80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B3F12F4-FFE1-4C5F-9506-75E4ED663F62}
